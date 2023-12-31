@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { HashLink as Link } from 'react-router-hash-link';
 
 export default function Footer() {
     return (
@@ -22,13 +22,13 @@ function Navbar() {
                 <Link to="/">Home</Link>
             </li>
             <li className=' list-none mb-1 md:mb-0'>
-                <Link to="/projects">Projects</Link>
+                <Link to="#projects">Projects</Link>
             </li>
             <li className=' list-none mb-1 md:mb-0'>
-                <Link to="/about">About</Link>
+                <Link to="#about">About</Link>
             </li>
             <li className=' list-none mb-1 md:mb-0'>
-                <Link to="/contact">Contact</Link>
+                <Link to="#services">Services</Link>
             </li>
         </div>
     );

@@ -26,7 +26,7 @@ const serviceArray = [
 
 export default function Services() {
     return (
-        <div>
+        <div id='services'>
             <div className='pt-20 pb-10 mb-5 px-8 md:grid'>
                 <div className='flex flex-col gap-4 '>
                     <span className='bg-justTop font-Grotesk uppercase px-4 py-2 bg-slate-600 rounded-lg w-fit space-x-9'>Services</span>

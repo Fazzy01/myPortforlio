@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function About() {
     return (
-        <div>
+        <div id='about'>
             <div className='mt-0 md:mt-20 mb-10 mx-8 md:grid grid-cols-2'>
 
                 <div className='md:block'>

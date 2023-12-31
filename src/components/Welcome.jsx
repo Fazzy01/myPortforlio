@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { TfiFacebook, TfiInstagram, TfiGithub } from "react-icons/tfi";
+// import {MyCV} from '/assets/cv/updated_DevFawaz_CV.pdf'
 
 
 export default function Welcome() {
@@ -15,7 +16,10 @@ export default function Welcome() {
                 </p>
 
                 <div className='flex gap-4 md:gap-10'>
-                    <button className='bg-primary px-5 py-2 md:px-7 md:py-4 rounded-full text-sm md:text-xl'>Download CV</button>
+                    <a href="/assets/cv/updated_DevFawaz_CV.pdf" download="DevFawaz-CV" target='_blank' rel='noreferrer'>
+                        <button className='bg-primary px-5 py-2 md:px-7 md:py-4 rounded-full text-sm md:text-xl hover:opacity-[0.5]'>Download CV</button>
+                    </a>
+
 
                     <div className='flex gap-4 justify-center'>
                         <div className='w-7 h-7 md:w-11 md:h-11 bg-primary rounded-full flex justify-center items-center border-solid border-2 border-indigo-600 '>
