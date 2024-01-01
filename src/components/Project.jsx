@@ -6,41 +6,46 @@ import { FiPlus } from "react-icons/fi";
 
 const projectArray = [
     {
-        imgsrc: "/assets/devnetiglobal.png",
-        imgalt: "project1_img",
-        projectname: "Driving-Express",
-        projecttitile: "Website Design",
-        projectdesc: "Web Design and App Design",
-    },
-
-    {
-        imgsrc: "/assets/devnetiglobal.png",
-        imgalt: "project2_img",
-        projectname: "AllPlayee",
-        projecttitile: "Website Application",
-        projectdesc: "Frontend Design,Backend Design",
-    },
-
-    {
-        imgsrc: "/assets/devnetiglobal.png",
-        imgalt: "project3_img",
+        imgsrc: "/assets/topupmatePic.png",
+        imgalt: "topupmatePic_img",
         projectname: "Topupmate",
+        url: "https://www.topupmate.com/",
         projecttitile: "VTU Website Design",
-        projectdesc: "Frontend & Backend Design, App Design",
+        projectdesc: "Frontend & Backend Design",
     },
-];
+    {
+        imgsrc: "/assets/drivingexpressPic.png",
+        imgalt: "Driving_img",
+        projectname: "Driving-Express",
+        url: "https://drivingexpress.ng/",
+        projecttitile: "Website Design",
+        projectdesc: "Backend Design",
+    },
 
-const obj = {
-    imgsrc: "/assets/devnetiglobal.png",
-    imgalt: "project1_img",
-    projectname: "Driving-Express",
-    projecttitile: "Website Design",
-    projectdesc: "Web Design, App Design",
-}
+    {
+        imgsrc: "/assets/allplzyeePic.png",
+        imgalt: "AllPlayee_img",
+        projectname: "AllPlayee",
+        url: "https://allplayee.com/",
+        projecttitile: "Website Application",
+        projectdesc: "Frontend & Backend Design",
+    },
+    {
+        imgsrc: "/assets/dmhPic.png",
+        imgalt: "DMHoldings_img",
+        projectname: "DMHoldings",
+        url: "https://dmholdingslimited.com",
+        projecttitile: "Website Design",
+        projectdesc: "Frontend Design",
+    },
+
+
+
+];
 
 export default function Project() {
     return (
-        <div className='pt-20 pb-10 mb-5 px-8 md:grid bg-banner w-screen' id='projects'>
+        <div className='pt-20 pb-10 mb-5 px-8  bg-banner w-screen' id='projects'>
             <div className='flex flex-col gap-4 '>
                 <span className='bg-justTop font-Grotesk uppercase px-4 py-2 bg-slate-600 rounded-lg w-fit space-x-9'>My Work</span>
                 <h1 className='uppercase text-white text-4xl font-bold mb-6'>Recent Projects</h1>
@@ -56,12 +61,12 @@ function EachProject({ comingParam }) {
 
     return (
 
-        <div className='flex flex-row md:w-[1600px] justify-start overflow-x-scroll gap-8 no-scrollbar'>
+        <div className='flex flex-row  justify-start overflow-x-scroll gap-8 no-scrollbar'>
 
             {comingParam.map((item) => (
 
-                <div className='group p-4 bg-white w-fit md:w-1/4 h-fit rounded-xl flex flex-col flex-shrink-0 gap-6 '>
-                    <Link>
+                <div className='group p-4 bg-white w-fit md:w-1/3 h-fit rounded-xl flex flex-col flex-shrink-0 gap-6 '>
+                    <Link to={item.url}>
                         <div className='relative overflow-hidden flex-shrink-0'>
                             <div className="w-[100%] object-fit rounded-xl group-hover:scale-125 " >
                                 <img className='w-[100%] h-[40vh] rounded-xl' src={item.imgsrc} alt={item.imgalt} />
@@ -83,11 +88,11 @@ function EachProject({ comingParam }) {
                     <div className='flex justify-between'>
                         <div    >
                             <h2 className='text-[black] text-xl md:text-2xl'>{item.projecttitile}</h2>
-                            <p className='text-[gray] w-48 md:w-auto'>{item.projectdesc}</p>
+                            <p className='text-[gray] w-48 md:w-auto text-sm md:text-sm'>{item.projectdesc}</p>
                         </div>
 
-                        <Link>
-                            <div className='w-11 h-11 mt-2 bg-primary rounded-full flex justify-center items-center border-solid border-2 border-[black] '>
+                        <Link to={item.url}>
+                            <div className='w-7 h-7 md:w-11 md:h-11 mt-2 bg-primary rounded-full flex justify-center items-center border-solid border-2 border-[black] '>
                                 <VscArrowRight fontSize={20} />
                             </div>
                         </Link>

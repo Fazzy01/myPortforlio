@@ -1,6 +1,10 @@
 import { useState, useEffect } from 'react'
 import { TfiFacebook, TfiInstagram, TfiGithub } from "react-icons/tfi";
-// import {MyCV} from '/assets/cv/updated_DevFawaz_CV.pdf'
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaWhatsapp } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 
 
 export default function Welcome() {
@@ -22,21 +26,35 @@ export default function Welcome() {
 
 
                     <div className='flex gap-4 justify-center'>
-                        <div className='w-7 h-7 md:w-11 md:h-11 bg-primary rounded-full flex justify-center items-center border-solid border-2 border-indigo-600 '>
-                            <TfiFacebook className='text-sm md:text-xl' />
-                        </div>
+                        <Link to="https://github.com/Fazzy01">
+                            <div className='w-7 h-7 md:w-11 md:h-11 bg-[black] rounded-full flex justify-center items-center border-solid border-2 border-indigo-600 hover:opacity-[0.6] '>
+                                <FaGithub className='text-sm md:text-xl' />
+                            </div>
+                        </Link>
 
-                        <div className='w-7 h-7 md:w-11 md:h-11  bg-[#cd2d48] y rounded-full flex justify-center items-center border-solid border-2 border-indigo-600 '>
-                            <TfiInstagram className='text-sm md:text-xl' />
-                        </div>
+                        <Link to="www.linkedin.com/in/jamiu-fawaz-6373781a8">
+                            <div className='w-7 h-7 md:w-11 md:h-11  bg-[#cd2d48] y rounded-full flex justify-center items-center border-solid border-2 border-indigo-600 hover:opacity-[0.6] '>
+                                <FaLinkedin className='text-sm md:text-xl' />
+                            </div>
+                        </Link>
 
-                        <div className='w-7 h-7 md:w-11 md:h-11 bg-primary rounded-full flex justify-center items-center border-solid border-2 border-indigo-600 '>
-                            <TfiFacebook className='text-sm md:text-xl' />
+                        <Link to="https://wa.me/2349086531144">
+                            <div className='w-7 h-7 md:w-11 md:h-11 bg-primary rounded-full flex justify-center items-center border-solid border-2 border-indigo-600 hover:opacity-[0.6] '>
+                                <FaWhatsapp className='text-sm md:text-xl' />
+                            </div>
+                        </Link>
+
+                        <Link to="https://twitter.com/Fazzy499?t=CYKJCuLFKwj6sGI42CmMiQ&s=09" className='hidden md:block'>
+                            <div className='w-7 h-7 md:w-11 md:h-11 bg-primary rounded-full flex justify-center items-center border-solid border-2 border-indigo-600 hover:opacity-[0.6] '>
+                                <FaXTwitter className='text-sm md:text-xl' />
+                            </div>
+                        </Link>
+
+
+                        {/* <div className='w-11 h-11 bg-primary rounded-full flex justify-center items-center border-solid border-2 border-indigo-600 hover:opacity-[0.6] '>
+                            <FaXTwitter fontSize={26} />
                         </div>
-                        {/* <div className='w-11 h-11 bg-primary rounded-full flex justify-center items-center border-solid border-2 border-indigo-600 '>
-                            <TfiFacebook fontSize={26} />
-                        </div>
-                        <div className='w-11 h-11 bg-primary rounded-full flex justify-center items-center border-solid border-2 border-indigo-600 '>
+                        <div className='w-11 h-11 bg-primary rounded-full flex justify-center items-center border-solid border-2 border-indigo-600 hover:opacity-[0.6] '>
                             <TfiFacebook fontSize={26} />
                         </div> */}
 
