@@ -32,7 +32,7 @@ export default function Welcome() {
                             </div>
                         </Link>
 
-                        <Link to="www.linkedin.com/in/jamiu-fawaz-6373781a8">
+                        <Link to="https://www.linkedin.com/in/jamiu-fawaz-6373781a8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ">
                             <div className='w-7 h-7 md:w-11 md:h-11  bg-[#cd2d48] y rounded-full flex justify-center items-center border-solid border-2 border-indigo-600 hover:opacity-[0.6] '>
                                 <FaLinkedin className='text-sm md:text-xl' />
                             </div>

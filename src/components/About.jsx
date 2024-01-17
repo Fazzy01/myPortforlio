@@ -43,7 +43,7 @@ export default function About() {
 
                     <Link to="https://wa.me/2349086531144">
                         <div className='flex gap-3 md:gap-10'>
-                            <button className='bg-primary px-5 py-2 md:px-7 md:py-4 rounded-full text-sm md:text-xl uppercase'>Get In Touch</button>
+                            <button className='bg-primary px-5 py-2 md:px-7 md:py-4 rounded-full text-sm md:text-xl uppercase hover:opacity-[0.6]'>Get In Touch</button>
                         </div>
                     </Link>
 
